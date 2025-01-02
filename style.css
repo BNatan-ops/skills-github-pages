@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cashflow-wheel {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffffff, #f8f9fa);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section input[type="text"],
+.section input[type="number"] {
+    width: 80%;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.section button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.section button:hover {
+    background-color: #0056b3;
+}
+
+.assets { top: 50px; left: 300px; background: #e1f7e1; }
+.liabilities { top: 50px; right: 300px; background: #ffe1e1; }
+.income { bottom: 50px; left: 300px; background: #dfe8fd; }
+.spendings { bottom: 50px; right: 300px; background: #fdf0d3; }
+.investments { top: 350px; left: 300px; background: #f1e4f9; }
+
+.center-summary {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: #007BFF;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.center-summary h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.center-summary p {
+    font-size: 18px;
+}
